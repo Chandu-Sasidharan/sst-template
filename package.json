@@ -4,6 +4,7 @@
   "description": "SST Template",
   "type": "module",
   "private": true,
+  "author": "Chandu",
   "workspaces": [
     "app/packages/*"
   ],
@@ -19,7 +20,6 @@
   },
   "devDependencies": {
     "@tsconfig/node22": "^22",
-    "@types/node": "^24.9.1",
     "eslint": "^9.17.0",
     "eslint-plugin-n": "^17.15.1",
     "husky": "^9.1.7",
