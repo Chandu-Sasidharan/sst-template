@@ -1,0 +1,12 @@
+{
+  "name": "@sst-template/api",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "sst": "^3"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.147"
+  }
+}

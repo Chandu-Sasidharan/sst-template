@@ -1,0 +1,35 @@
+{
+  "name": "sst-template",
+  "version": "1.0.0",
+  "description": "SST Template",
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "app/packages/*"
+  ],
+  "scripts": {
+    "dev": "npx sst dev",
+    "deploy": "AWS_PROFILE=chandu npx sst deploy --stage production",
+    "aws:login": "aws sso login --profile chandu",
+    "test": "echo \"No test specified\"",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "sst": "^3"
+  },
+  "devDependencies": {
+    "@tsconfig/node22": "^22",
+    "@types/node": "^24.9.1",
+    "eslint": "^9.17.0",
+    "eslint-plugin-n": "^17.15.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.3.0",
+    "prettier": "^3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.9",
+    "typescript": "^5"
+  },
+  "lint-staged": {
+    "app/**/*.{js,ts}": "eslint --fix",
+    "app/**/*.{js,ts,md}": "prettier --write"
+  }
+}
